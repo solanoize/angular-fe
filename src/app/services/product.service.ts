@@ -10,6 +10,8 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   all(): Observable<IProduct[]> {
-    return this.http.get<IProduct[]>(`/api/products`);
+    return this.http.get<IProduct[]>(
+      `https://2nwhkl7s-3000.asse.devtunnels.ms/api/products`
+    );
   }
 }
