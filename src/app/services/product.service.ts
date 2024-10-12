@@ -11,7 +11,7 @@ export class ProductService {
 
   all(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(
-      `https://2nwhkl7s-3000.asse.devtunnels.ms/api/products`
+      `https://2nwhkl7s-3000.asse.devtunnels.ms/products`
     );
   }
 }
